@@ -1,0 +1,328 @@
+.container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin: 5em;
+        width: 50%;
+
+        h1 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #1DAEEF;
+            width: 100%;
+            text-align: initial;
+            padding: 0.5em 0em;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+
+
+            font-style: normal;
+            color: var(--txt-especial-6);
+            padding: 0.5em 0em;
+            width: 100%;
+            text-align: initial;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+                align-content: center;
+                width: 100%;
+
+                input {
+                    background: rgba(29, 174, 239, 0.08);
+                    border: 1px solid #D9D9D9;
+                    border-radius: 6px;
+                    margin: 1em;
+                    padding: 0.5em 2em;
+                    width: 50em;
+
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 12px;
+
+
+                }
+
+                ::placeholder {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 12px;
+
+
+                    color: #000000;
+                }
+
+                textarea {
+                    background: rgba(29, 174, 239, 0.08);
+                    border: 1px solid #D9D9D9;
+                    border-radius: 6px;
+                    margin: 1em;
+                    padding: 0.5em 2em;
+                    width: 50em;
+                    height: 12em;
+
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 12px;
+                }
+            }
+
+            .radio {
+                display: flex !important;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-items: center;
+                flex-direction: column;
+                margin: .5em;
+
+                .labels {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-content: center;
+
+                    label {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 12px;
+
+                        color: #000000;
+
+                        input {
+                            padding: 0;
+                            margin: 5px;
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+
+            .enviar {
+                display: flex;
+                width: 100%;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                margin: 2em;
+
+                .btn {
+                    width: 50%;
+
+                    button {
+                        background: #1DAEEF;
+                        border-radius: 6px;
+                        border: none;
+                        padding: .5em 4em;
+                        margin: 2em;
+                        cursor: pointer;
+                        color: #fff;
+                        transition: all .8s;
+                        border: 1px solid #1DAEEF;
+                    }
+
+                    :hover {
+                        background: #fff;
+                        border: solid 1px #1DAEEF;
+                        color: #1DAEEF;
+                    }
+                }
+
+                .recaptcha {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .mapa {
+        padding: 0;
+        margin: 5em;
+        width: 50%;
+        .contatos{
+            margin: 1em 0;
+            p {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+    
+                font-style: normal;
+                color: var(--txt-especial-6);
+                padding: 0.5em 0em;
+                width: 100%;
+                text-align: initial;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            margin: 1em;
+            width: 100%;
+
+            h1 {
+                font-size: 22px;
+                padding: 0.5em 1em;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 15px;
+                padding: 0.5em 2em;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+
+                div {
+                    align-items: center;
+
+                    input {
+                        width: 23em;
+                    }
+
+                    textarea {
+                        width: 23em;
+                    }
+                }
+
+                .radio {
+                    display: flex !important;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 0em;
+
+                    .labels {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        align-content: center;
+
+                        label {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            align-items: center;
+                            flex-wrap: nowrap;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 12px;
+
+                            color: #000000;
+
+                            input {
+                                padding: 0;
+                                margin: 5px;
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+
+                .enviar {
+                    flex-direction: column;
+                    margin: 1em;
+
+                    .btn {
+                        width: 50%;
+
+                        button {
+                            background: #1DAEEF;
+                            border-radius: 6px;
+                            border: none;
+                            padding: .5em 4em;
+                            margin: 2em;
+                            cursor: pointer;
+                            color: #fff;
+                            transition: all .8s;
+                            border: 1px solid #1DAEEF;
+                        }
+
+                        :hover {
+                            background: #fff;
+                            border: solid 1px #1DAEEF;
+                            color: #1DAEEF;
+                        }
+                    }
+
+                    .recaptcha {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .mapa {
+            padding: 0;
+            margin-bottom: 1em;
+            width: 90%;
+        }
+    }
+}

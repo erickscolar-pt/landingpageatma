@@ -1,0 +1,57 @@
+
+html{
+width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+
+  }
+
+  :root{
+
+    --letra-nav: #0A53A8;
+
+    --btn-1: #1260BC;
+    --btn-2: #0A53A8;
+    --btn-3: #6637A0;
+    --btn-4:#26BB85;
+    --btn-nav-hover: linear-gradient(180deg, rgba(10, 83, 168, 0.5) -116.25%, #0A53A8 51.43%, rgba(10, 83, 168, 0.5) 199.38%);
+    
+    --txt-especial-1: #26BB85;
+    --txt-especial-2: #6637A0;
+    --txt-especial-3: #16BDF2;
+    --txt-especial-4: #9D9D9D;
+    --txt-especial-5: #3051A6;
+    --txt-especial-6: #838383;
+
+    --roxo: #6637A0;
+    --verde: #26BB85;
+    --white: #FFF;
+    --black: #000;
+    --cinza: #D6D8D9;
+    --gradient-azul: linear-gradient(89.83deg, #16BDF2 0.17%, #0A53A8 99.86%);
+  }
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(112, 111, 111);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(56, 55, 58);
+  border-radius: 10px;
+  border: 1px solid rgb(59, 56, 56);
+}

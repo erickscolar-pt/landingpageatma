@@ -1,0 +1,185 @@
+.container{
+    bottom: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+    background: var(--roxo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    .top{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        margin: 35px;
+    
+        .linksuteis{
+            img{
+                width: 20em;
+            }
+            span{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                /* identical to box height */
+                
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin: 15px 0;
+                color: #0BB0E3;
+            }
+            a{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                /* identical to box height */
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin: 15px 0;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .sociais{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+            span{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 41px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin: 5px;
+                color: #0BB0E3;
+            }
+            .redessociais{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin: 5px;
+                }
+            }
+    }
+
+    .cop{
+        background: var(--verde);
+        height: 74px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        span{
+            font-style: normal;
+            font-weight: 100;
+            font-size: 17px;
+            line-height: 20px;
+            /* identical to box height */
+    
+            display: flex;
+            align-items: center;
+            text-align: center;
+    
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        position: relative;
+        .top{
+            display: flex;
+            width: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 35px;
+        
+            .linksuteis{
+                img{
+                    width: 10em;
+                }
+                span{
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+                a{
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+        }
+    
+        .sociais{
+            flex-direction: column;
+            align-items: flex-start;
+                span{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 41px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    margin: 5px;
+                    color: #0BB0E3;
+                }
+                .redessociais{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin: 5px;
+                        width: 2em;
+                    }
+                }
+        }
+    
+        .cop{
+            background: var(--verde);
+            height: 74px;
+            
+            span{
+                font-style: normal;
+                font-weight: 200;
+                font-size: 10px;
+                line-height: 12px;
+                /* identical to box height */
+        
+                display: flex;
+                align-items: center;
+                text-align: center;
+        
+                color: #FFFFFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.container {
+    margin: 0;
+    padding: 5em;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    button {
+        border-radius: 50px;
+        background: var(--btn-3);
+        padding: 0.5em 5em;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        justify-content: center;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 26px;
+        cursor: pointer;
+        margin: 2em;
+        color: #FFFFFF;
+        transition: all .8s;
+    }
+
+    button:hover {
+        background: var(--white);
+        color: var(--btn-3);
+        border: 1px solid var(--btn-3);
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        h1 {
+            font-style: normal;
+            font-size: 60px;
+            line-height: 52px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--txt-especial-2)
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: var(--txt-especial-5);
+        margin: 1em;
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 1em;
+
+        img {
+            width: 15em;
+        }
+
+        p {
+            font-size: 17px;
+            width: 100%;
+            text-align: center;
+            line-height: 30px;
+
+        }
+
+        .titulo {
+            h1 {
+                font-size: 22px;
+                line-height: 30px;
+
+
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        button {
+            font-size: 10px;
+        }
+
+    }
+}
