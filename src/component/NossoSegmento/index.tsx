@@ -1,12 +1,6 @@
-import { useContext  } from 'react'
 import styles from './styles.module.scss'
-import Link from 'next/link'
-
-
 
 export function NossoSegmento(){
-
-
   return(
       <div className={styles.container}>
         <h1>Nosso <span>&nbsp;Segmento</span></h1>

@@ -1,5 +1,5 @@
-import { Header } from "@/component/Header";
 import styles from './styles.module.scss'
+import Link from "next/link";
 
 export default function SejaUmAtworker(){
     return(
@@ -13,7 +13,7 @@ export default function SejaUmAtworker(){
                 Usamos ferramentas próprias de atração e seleção, 
                 que auxiliam no processo de identificação de bons profissionais, 
                 aumentando a assertividade em cada processo seletivo</p>
-            <button type="button" >SAIBA MAIS</button>
+            <Link href="https://www.atmagente.com.br/" target="_blank">SAIBA MAIS</Link>
         </div>
     )
 }

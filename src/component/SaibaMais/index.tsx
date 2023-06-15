@@ -1,4 +1,3 @@
-import { Header } from "@/component/Header";
 import styles from './styles.module.scss'
 
 export default function SaibaMais(){

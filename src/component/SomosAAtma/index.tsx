@@ -1,12 +1,6 @@
-import { useContext  } from 'react'
 import styles from './styles.module.scss'
-import Link from 'next/link'
-
-
 
 export function SomosAAtma(){
-
-
   return(
       <div className={styles.container}>
         <img src="/atma_logo.png"   />

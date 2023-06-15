@@ -9,7 +9,7 @@
     justify-content: center;
     align-content: center;
 
-    button {
+    a {
         border-radius: 50px;
         background: var(--btn-4);
         padding: 0.5em 5em;
@@ -19,7 +19,7 @@
         text-align: center;
         color: #FFFFFF;
         justify-content: center;
-
+        text-decoration: none;
         font-style: normal;
         font-weight: 700;
         font-size: 23px;
@@ -28,9 +28,11 @@
         margin: 2em;
         color: #FFFFFF;
         transition: all .8s;
+        border: 1px solid var(--btn-4);
+
     }
 
-    button:hover {
+    a:hover {
         background: var(--white);
         color: var(--btn-4);
         border: 1px solid var(--btn-4);
@@ -87,7 +89,7 @@
             line-height: 32px;
         }
 
-        button {
+        a {
             font-size: 10px;
         }
 

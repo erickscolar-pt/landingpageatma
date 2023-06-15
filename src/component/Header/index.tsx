@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import styles from './styles.module.scss'
 import Link from 'next/link'
 import { HiDotsVertical } from "react-icons/hi";
@@ -20,17 +20,17 @@ export function Header() {
 
         <nav className={styles.menuNav}>
           <Link href="/">HOME</Link>
-          <Link href="/">FAÇA ACORDO</Link>
+          <Link href="https://facaacordo.com.br/home" target='_blank'>FAÇA ACORDO</Link>
           <Link href="/quemsomos">QUEM SOMOS</Link>
-          <Link href="/">TRABALHE CONOSCO</Link>
+          <Link href="https://www.atmagente.com.br/" target='_blank'>TRABALHE CONOSCO</Link>
         </nav>
         <div className={styles.dropdown}>
           <HiDotsVertical className={styles.dropbtn} width={20} height={20} />
           <div className={styles.dropdownContent}>
             <Link href="/">HOME</Link>
-            <Link href="/">FAÇA ACORDO</Link>
+            <Link href="https://facaacordo.com.br/home" target='_blank'>FAÇA ACORDO</Link>
             <Link href="/quemsomos">QUEM SOMOS</Link>
-            <Link href="/">TRABALHE CONOSCO</Link>
+            <Link href="https://www.atmagente.com.br/" target='_blank'>TRABALHE CONOSCO</Link>
           </div>
         </div>
 

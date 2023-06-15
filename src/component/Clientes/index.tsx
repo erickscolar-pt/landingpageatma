@@ -1,10 +1,6 @@
-import { useContext } from 'react'
 import styles from './styles.module.scss'
-import Link from 'next/link'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'; // Importa o componente Carousel
-import Image from 'next/image'; // Importa o componente Image do Next.js
-import { CSSTransition } from 'react-transition-group';
 
 const images = [
   {
@@ -27,8 +23,6 @@ const images = [
 
 
 export function Clientes() {
-
-
   return (
     <Carousel
       className={styles.container}

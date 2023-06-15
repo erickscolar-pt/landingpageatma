@@ -1,5 +1,5 @@
-import { Header } from "@/component/Header";
 import styles from './styles.module.scss'
+import Link from "next/link";
 
 export default function FacaAcordo(){
     return(
@@ -10,7 +10,7 @@ export default function FacaAcordo(){
                 se relacionar com seus credores. Nosso objetivo é criar 
                 uma ponte de negociação. Oferecemos soluções para portais 
                 de negociação de dívidas, agentes virtuais e chatbots.</p>
-            <button type="button" >SAIBA MAIS</button>
+            <Link href="https://facaacordo.com.br/home" target="_blank">SAIBA MAIS</Link>
         </div>
     )
 }

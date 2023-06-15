@@ -1,12 +1,6 @@
-import { useContext  } from 'react'
 import styles from './styles.module.scss'
-import Link from 'next/link'
-
-
 
 export function SobreNos(){
-
-
   return(
       <div className={styles.container}>
         <h1>Sobre nós</h1>

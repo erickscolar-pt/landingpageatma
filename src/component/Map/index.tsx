@@ -1,4 +1,3 @@
-//import { MapContainer, TileLayer, useMap, Popup, Marker } from 'react-leaflet'
 import styles from './styles.module.scss'
 import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
 

@@ -45,6 +45,17 @@
             justify-content: center;
             width: 100%;
 
+            span {
+                color: #ff0000;
+                font-style: normal;
+                font-weight: 100;
+                font-size: 12px;
+                line-height: 10px;
+                text-align: start;
+                width: 100%;
+                padding: 0 6em;
+            }
+
             div {
                 display: flex;
                 flex-direction: column;
@@ -166,7 +177,8 @@
                 }
 
                 .recaptcha {
-                    width: 50%;
+                    width: 39%;
+                    border-radius: 5px;
                 }
             }
         }
@@ -176,19 +188,22 @@
         padding: 0;
         margin: 5em;
         width: 50%;
-        .contatos{
+
+        .contatos {
             margin: 1em 0;
+
             p {
                 font-weight: 500;
                 font-size: 15px;
                 line-height: 18px;
-    
+
                 font-style: normal;
                 color: var(--txt-especial-6);
                 padding: 0.5em 0em;
                 width: 100%;
                 text-align: initial;
-                span{
+
+                span {
                     font-weight: 700;
                 }
             }
