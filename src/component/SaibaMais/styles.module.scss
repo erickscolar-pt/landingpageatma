@@ -1,6 +1,6 @@
 .container {
     margin: 0;
-    padding: 5em;
+    padding: 2em;
     background: var(--gradient-azul);
     display: flex;
     flex-direction: column;
@@ -9,36 +9,14 @@
     justify-content: center;
     align-content: center;
 
-    button {
-        border-radius: 50px;
-        background: var(--btn-1);
-        padding: 0.5em 5em;
-        border: none;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF;
-        justify-content: center;
-
-        font-style: normal;
-        font-weight: 700;
-        font-size: 23px;
-        line-height: 26px;
-        cursor: pointer;
-        margin: 2em;
-        color: #FFFFFF;
-        transition: all .8s;
-    }
-
-    button:hover {
-        background: var(--white);
-        color: var(--btn-1);
+    img{
+        padding: 0;
     }
 
     p {
         font-style: normal;
         font-weight: 700;
-        font-size: 23px;
+        font-size: 25px;
         line-height: 26px;
         display: flex;
         align-items: center;

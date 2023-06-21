@@ -13,7 +13,7 @@ export default function SejaUmAtworker(){
                 Usamos ferramentas próprias de atração e seleção, 
                 que auxiliam no processo de identificação de bons profissionais, 
                 aumentando a assertividade em cada processo seletivo</p>
-            <Link href="https://www.atmagente.com.br/" target="_blank">SAIBA MAIS</Link>
+            <Link href="https://www.atmagente.com.br/" target="_blank">TRABALHE CONOSCO</Link>
         </div>
     )
 }

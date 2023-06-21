@@ -1,40 +1,131 @@
+$font-path: '../public/fonts/';
 
-html{
-width: 100%;
+
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url($font-path+'Averta-Regular.eot');
+  src: url($font-path+'Averta-Regular.eot?#iefix') format('embedded-opentype'),
+    url($font-path+'Averta-Regular.svg#Averta-Regular') format('svg'),
+    url($font-path+'Averta-Regular.ttf') format('truetype'),
+    url($font-path+'Averta-Regular.woff') format('woff'),
+    url($font-path+'Averta-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-family: 'Arial';
 
-  }
+@font-face {
+  font-family: 'Averta-Black';
+  src: url($font-path+'Averta-Black.eot');
+  src: url($font-path+'Averta-Black.eot?#iefix') format('embedded-opentype'),
+    url($font-path+'Averta-Black.svg#Averta-Black') format('svg'),
+    url($font-path+'Averta-Black.ttf') format('truetype'),
+    url($font-path+'Averta-Black.woff') format('woff'),
+    url($font-path+'Averta-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  :root{
+@font-face {
+  font-family: 'Averta-Bold';
+  src: url($font-path+'Averta-Bold.eot');
+  src: url($font-path+'Averta-Bold.eot?#iefix') format('embedded-opentype'),
+    url($font-path+'Averta-Bold.svg#Averta-Bold') format('svg'),
+    url($font-path+'Averta-Bold.ttf') format('truetype'),
+    url($font-path+'Averta-Bold.woff') format('woff'),
+    url($font-path+'Averta-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    --letra-nav: #0A53A8;
+@font-face {
+  font-family: 'Averta-ExtraBold';
+  src: url($font-path+'Averta-ExtraBold.eot');
+  src: url($font-path+'Averta-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url($font-path+'Averta-ExtraBold.svg#Averta-ExtraBold') format('svg'),
+    url($font-path+'Averta-ExtraBold.ttf') format('truetype'),
+    url($font-path+'Averta-ExtraBold.woff') format('woff'),
+    url($font-path+'Averta-ExtraBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    --btn-1: #1260BC;
-    --btn-2: #0A53A8;
-    --btn-3: #6637A0;
-    --btn-4:#26BB85;
-    --btn-nav-hover: linear-gradient(180deg, rgba(10, 83, 168, 0.5) -116.25%, #0A53A8 51.43%, rgba(10, 83, 168, 0.5) 199.38%);
-    
-    --txt-especial-1: #26BB85;
-    --txt-especial-2: #6637A0;
-    --txt-especial-3: #16BDF2;
-    --txt-especial-4: #9D9D9D;
-    --txt-especial-5: #3051A6;
-    --txt-especial-6: #838383;
+@font-face {
+  font-family: 'Averta-Light';
+  src: url($font-path+'Averta-Light.eot');
+  src: url($font-path+'Averta-Light.eot?#iefix') format('embedded-opentype'),
+    url($font-path+'Averta-Light.svg#Averta-Light') format('svg'),
+    url($font-path+'Averta-Light.ttf') format('truetype'),
+    url($font-path+'Averta-Light.woff') format('woff'),
+    url($font-path+'Averta-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    --roxo: #6637A0;
-    --verde: #26BB85;
-    --white: #FFF;
-    --black: #000;
-    --cinza: #D6D8D9;
-    --gradient-azul: linear-gradient(89.83deg, #16BDF2 0.17%, #0A53A8 99.86%);
-  }
+@font-face {
+  font-family: 'Averta-Semibold';
+  src: url($font-path+'Averta-Semibold.eot');
+  src: url($font-path+'Averta-Semibold.eot?#iefix') format('embedded-opentype'),
+    url($font-path+'Averta-Semibold.svg#Averta-Semibold') format('svg'),
+    url($font-path+'Averta-Semibold.ttf') format('truetype'),
+    url($font-path+'Averta-Semibold.woff') format('woff'),
+    url($font-path+'Averta-Semibold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionPro-Regular';
+  src: url($font-path+'MinionPro-Regular.eot');
+  src: url($font-path+'MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url($font-path+'MinionPro-Regular.svg#MinionPro-Regular') format('svg'),
+    url($font-path+'MinionPro-Regular.ttf') format('truetype'),
+    url($font-path+'MinionPro-Regular.woff') format('woff'),
+    url($font-path+'MinionPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  width: 100%;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Averta-Regular';
+
+
+
+}
+
+:root {
+
+  --letra-nav: #0A53A8;
+
+  --btn-1: #1260BC;
+  --btn-2: #0A53A8;
+  --btn-3: #6637A0;
+  --btn-4: #26BB85;
+  --btn-nav-hover: linear-gradient(180deg, rgba(10, 83, 168, 0.5) -116.25%, #0A53A8 51.43%, rgba(10, 83, 168, 0.5) 199.38%);
+
+  --txt-especial-1: #26BB85;
+  --txt-especial-2: #6637A0;
+  --txt-especial-3: #16BDF2;
+  --txt-especial-4: #9D9D9D;
+  --txt-especial-5: #3051A6;
+  --txt-especial-6: #838383;
+
+  --roxo: #6637A0;
+  --verde: #26BB85;
+  --white: #FFF;
+  --black: #000;
+  --cinza: #D6D8D9;
+  --gradient-azul: linear-gradient(89.83deg, #16BDF2 0.17%, #0A53A8 99.86%);
+}
+
 /* Works on Firefox */
 * {
   scrollbar-width: thin;

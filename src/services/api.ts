@@ -2,13 +2,12 @@ import axios, { AxiosError } from 'axios'
 import { parseCookies } from 'nookies'
 import { AuthTokenError } from './errors/AuthTokenError'
 
-import { signOut } from '../contexts/AuthContext'
 
 export function setupAPIClient(ctx = undefined){
   let cookies = parseCookies(ctx);
 
   const api = axios.create({
-    baseURL: 'https://backend-pizzariacoorado.herokuapp.com',
+    baseURL: 'http://localhost:8400/email',
     headers: {
       Authorization: `Bearer ${cookies['@nextauth.token']}`
     }
@@ -21,7 +20,6 @@ export function setupAPIClient(ctx = undefined){
       // qualquer erro 401 (nao autorizado) devemos deslogar o usuario
       if(typeof window !== undefined){
         // Chamar a funçao para deslogar o usuario
-        signOut();
       }else{
         return Promise.reject(new AuthTokenError())
       }

@@ -235,6 +235,7 @@
             h1 {
                 font-size: 22px;
                 padding: 0.5em 1em;
+                text-align: center;
             }
 
             p {
@@ -242,6 +243,7 @@
                 font-size: 10px;
                 line-height: 15px;
                 padding: 0.5em 2em;
+                text-align: center;
             }
 
             form {
@@ -338,6 +340,13 @@
             padding: 0;
             margin-bottom: 1em;
             width: 90%;
+            margin: 1em;
+
+            .contatos {
+                p {
+                    text-align: center;
+                }
+            }
         }
     }
 }

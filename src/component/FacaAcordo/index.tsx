@@ -10,7 +10,7 @@ export default function FacaAcordo(){
                 se relacionar com seus credores. Nosso objetivo é criar 
                 uma ponte de negociação. Oferecemos soluções para portais 
                 de negociação de dívidas, agentes virtuais e chatbots.</p>
-            <Link href="https://facaacordo.com.br/home" target="_blank">SAIBA MAIS</Link>
+            <Link href="https://facaacordo.com.br/home" target="_blank">NEGOCIE AQUI</Link>
         </div>
     )
 }

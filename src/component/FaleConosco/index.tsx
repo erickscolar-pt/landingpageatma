@@ -1,9 +1,9 @@
 import styles from './styles.module.scss'
-import { useState } from "react";
+import { useContext, useState, FormEvent } from "react";
 import dynamic from "next/dynamic";
-//import Map from "../Map";
 import Recaptcha from "../Recaptcha";
 import { toast } from 'react-toastify';
+import { AuthContexts } from '../../contexts/AuthContexts';
 
 const Map = dynamic(() => import('../Map'), { ssr: false })
 
@@ -34,6 +34,7 @@ type objValid = {
     }
 }
 export default function FaleConosco() {
+    const { enviaEmail } = useContext(AuthContexts)
 
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
@@ -51,8 +52,8 @@ export default function FaleConosco() {
 
 
 
-    const handleSubmit = (e: any) => {
-        e.preventDefault();
+    async function handleSubmit(event: FormEvent){
+        event.preventDefault();
         // Aqui você pode fazer algo com os dados do formulário, como enviar para um servidor
         console.log('Dados do formulário:', { nome, email, telefone, mensagem, tipoContato });
         console.log("Valor do reCAPTCHA:", recaptchaChange);
@@ -92,21 +93,29 @@ export default function FaleConosco() {
             tipoContato !== '' &&
             recaptchaChange !== '' 
         ){
-            toast.success(
-                tipoContato === 'comercial'? 
-                    'O seu contato Comercial foi enviado com sucesso! Aguarde nosso contato.' :
-                    'A sua duvida foi enviada com sucesso! Aguarde nosso contato.'
-            , {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-                });
-                //alert('teste')
+                let data = {
+                    nome,
+                    email,
+                    telefone,
+                    mensagem,
+                    tipoContato
+                }
+                await enviaEmail(data);
+
+                toast.success(
+                    tipoContato === 'comercial'? 
+                        'O seu contato Comercial foi enviado com sucesso! Aguarde nosso contato.' :
+                        'A sua duvida foi enviada com sucesso! Aguarde nosso contato.'
+                , {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    });
         }
 
     };

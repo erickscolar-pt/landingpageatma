@@ -19,7 +19,7 @@ export default function Footer() {
                     <Link href="https://www.atmagente.com.br/" target="_blank">OPORTUNIDADE DE EMPREGO</Link>
                 </div>
                 <div className={styles.sociais}>
-                    <span>SIGA-NOS</span>
+                    <span>Siga a ATMA nas redes sociais</span>
                     <div className={styles.redessociais}>
                         <Link href="https://www.facebook.com/atmabpo/" target="_blank">
                             <img src="/facebook.png" />

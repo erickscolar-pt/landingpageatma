@@ -3,6 +3,7 @@ import '../../styles/globals.scss'
 import Head from "next/head"
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify'
+import { AuthProvider } from "../contexts/AuthContexts";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -14,9 +15,10 @@ function MyApp({ Component, pageProps }: AppProps) {
                 />
                 <link rel="icon" type="image/png" sizes="32-32" href="../../public/favicon.png" />
             </Head>
-
-            <Component {...pageProps} />
-            <ToastContainer autoClose={3000} />
+            <AuthProvider>
+                <Component {...pageProps} />
+                <ToastContainer autoClose={3000} />
+            </AuthProvider>
 
         </>
     )
